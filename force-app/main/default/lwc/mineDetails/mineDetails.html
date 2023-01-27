@@ -1,0 +1,15 @@
+<template>
+  <lightning-card  title="Mine Details">
+    <template if:false={mineId}>
+    </template>
+    <template if:true={mineId}>
+        <lightning-record-view-form record-id={mineId} object-api-name="Mine__c">
+        <div class="slds-box">
+            <lightning-output-field field-name="Name"> </lightning-output-field>
+            <lightning-output-field field-name="Ore__c"></lightning-output-field>
+        </div>
+    </lightning-record-view-form>
+    <c-mine-location></c-mine-location>
+    </template>
+  </lightning-card>
+  </template>

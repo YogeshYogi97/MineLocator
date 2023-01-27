@@ -1,0 +1,14 @@
+<template>
+    <lightning-layout multiple-rows>
+      <lightning-layout-item size="12">
+        <lightning-card title="Select Element">
+          <p class="slds-var-p-horizontal_small">
+            <c-reserve-search onselected={updateSelectedElement}></c-reserve-search>
+          </p>
+        </lightning-card>
+      </lightning-layout-item>
+      <lightning-layout-item size="12" class="slds-p-top_small slds-is-relative">
+        <c-reserve-search-results record-id={selectedElement}></c-reserve-search-results>
+      </lightning-layout-item>
+    </lightning-layout>
+  </template>

@@ -1,0 +1,25 @@
+<template>
+  <lightning-layout multiple-rows="true">
+    <lightning-layout-item size="8">
+    <lightning-tabset variant="vertical">
+      <lightning-tab label="Results">
+        <div class="slds-scrollable_y">
+          <lightning-layout horizontal-align="center" multiple-rows="true" >
+            <template for:each={minesSearchResults} for:item="mine">
+              <lightning-layout-item padding="around-small" key={mine.Id}>
+                <c-mine-tile mine={mine} latitude={mine.Location__Latitude__s} longitude={mine.Location__Longitude__s} selected-mine-id={selectedMineId} onselected={updateSelectedTile}></c-mine-tile>
+              </lightning-layout-item>
+            </template>
+          </lightning-layout>
+        </div>
+      </lightning-tab>
+       <lightning-tab label="Mines Near Me">
+        <c-mines-near-me></c-mines-near-me>
+      </lightning-tab>
+    </lightning-tabset>
+  </lightning-layout-item>
+  <lightning-layout-item size="4" class="slds-p-left_small">
+    <c-mine-details></c-mine-details>
+  </lightning-layout-item>
+  </lightning-layout>
+  </template>
