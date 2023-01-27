@@ -1,8 +1,8 @@
 # Mine Locator
 
-A Salesforce project that enables users to find the mines which extract Ores of elements like Copper, Aluminium, etc.
+A Salesforce project that enables users to find the Mines which extract Ores of Elements such as Copper, Aluminium, Iron etc. built using Lightning Web Components.
 
 ## About the Author
 
-I am a passionate developer with 4+ YOE in Salesforce. Check my website for more details [MixedDML.com](https://mixeddml.com/).
+A passionate developer with 4+ YOE in Salesforce. Check my website - [MixedDML.com](https://mixeddml.com/) for more details .
 
